@@ -2,4 +2,4 @@
 
 Brayan Alexis Jiménez
 
-Mateo **Ernesto** Quintero
+Mateo Ernesto Quintero
