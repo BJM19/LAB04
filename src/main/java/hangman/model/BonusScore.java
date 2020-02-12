@@ -1,14 +1,18 @@
 
 package hangman.model;
 
-import hangman.model.dictionary.HangmanDictionary;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.*;
 
 
 public class BonusScore implements GameScore{
 
+	/**
+	 * Indica el puntajeTotal cuando el modo de juego es BonusScore
+	 * @param CorrectCount numero de letras correctas
+	 * @param incorrectCount numero de letras incorrectas
+	 * @return numero indicando el puntajeTotal
+	 * @pre el puntajeTotal inicial es 0
+	 * @pos el puntajeTotal no puede ser menor a 0
+	 */
  @Override 
 	public int CalculateScore(int CorrectCount, int 	incorrectCount){
 	int puntajeTotal=0;
