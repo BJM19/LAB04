@@ -25,6 +25,9 @@ public class PowerScore implements GameScore {
 		if (puntajeTotal<0){
 			puntajeTotal=0;
 		}
+		if (puntajeTotal>=500){
+			puntajeTotal=500;
+		}
 	return puntajeTotal;
 
 	}
