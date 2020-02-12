@@ -42,12 +42,14 @@ public class GUI {
     private CreditsController creditsController;
     private GameOverController gameoverController;
     private HighScoreController highScoreController;
+    private OriginalScore originalScore;
 
     // Use Factory method
     public GUI(HangmanFactoryMethod factoryMethod) {
         this.language = factoryMethod.createLanguage();
         this.dictionary = factoryMethod.createDictionary();
         this.hangmanPanel = factoryMethod.createHangmanPanel();
+        this.originalScore = factoryMethod.createOriginalScores();
     }
 
     @Inject
